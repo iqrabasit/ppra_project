@@ -9,7 +9,7 @@ def get_html_data(request):
     url = "http://irrigation.punjab.gov.pk/Search.aspx"
     response = requests.get(url).text
     soup = BeautifulSoup(response, "html.parser")
-    print('github testing')
+    print('github testing is working')
     headers = {'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
                'Content-Type': 'application/x-www-form-urlencoded',
                'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'}
